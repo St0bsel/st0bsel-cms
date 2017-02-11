@@ -1,0 +1,7 @@
+{
+  "navigation": [
+    ["index.html?p=index.html", "HOME", "navpos1"],
+    [0, "LOGIN", "open_login"],
+    [0,"CLOSE", "nav_close"]
+  ]
+}

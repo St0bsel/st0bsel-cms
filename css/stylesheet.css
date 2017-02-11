@@ -1,0 +1,330 @@
+/* variables */
+body {
+  --color_background: #F8F8FF;
+  --color_background_dark: rgb(147, 147, 147);
+  --color_1: #56A902;
+  --color_2: #3B4E32;
+}
+/* variables end */
+
+/* global tags */
+body {
+  margin: 0px;
+  font-family: helvetica;
+  background-color: var(--color_background);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/* global tags end */
+
+/* classes */
+/* navigation */
+.navbar {
+
+}
+
+.navinfo {
+
+}
+
+.navigation_nav {
+
+}
+
+.navigation_ul {
+  padding: 0;
+  margin: 0;
+  padding-right: 10px;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation_ul a {
+  text-decoration: none;
+}
+
+.navpos {
+  height: auto;
+  line-height: 20px;
+  padding-top: 17px;
+  padding-bottom: 18px;
+  width: 100px;
+  margin: auto;
+  margin-right: 10px;
+
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+  border-color: var(--color_1);
+
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.navpos:hover {
+  background-color: var(--color_1);
+  cursor: pointer;
+}
+/* navigation end */
+/* login */
+
+/* login end */
+/* general */
+.button {
+  width: 70px;
+  height: 30px;
+  padding: 10px;
+  border-width: thin;
+  border-radius: 2vh;
+  border-style: solid;
+  border-color: var(--color_1);
+  background-color: ;
+  cursor: pointer;
+
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--color_1);
+}
+
+.input_text {
+  padding: 7px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.close_button {
+
+}
+/* general end */
+/* classes end */
+
+/* ids */
+/* navigation */
+#navbar_complete {
+  position: fixed;
+  background-color: var(--color_background);
+  width: 100%;
+  height: 55px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: var(--color_2);
+}
+
+#navinfo_1 {
+  margin-left: 10px;
+  height: 100%;
+  float: left;
+  display: inline-block;
+}
+
+#navinfo_1_img {
+  height: 55px;
+  width: 55px;
+  float: left;
+}
+
+#navinfo_1_h1 {
+  margin: 5px;
+  margin-left: 15px;
+  float: right;
+  font-size: 45px;
+}
+
+#navinfo_2 {
+  height: 55px;
+  width: 80%;
+  margin-left: 20%;
+}
+
+#nav_open {
+  display: none;
+}
+
+#nav_close {
+  display: none;
+}
+
+#navnav_1 {
+
+}
+
+#navul_1 {
+
+}
+
+/* navigation */
+/* login */
+#login_div {
+  position: fixed;
+  display: none;
+  background-color: var(--color_background_dark);
+
+  border-width: thin;
+  border-radius: 2vh;
+  border-style: solid;
+  border-color: var(--color_1);
+  margin-top: 80px;
+  margin-left: -120px;
+  left: 90%;
+  width: 200px;
+  padding: 20px;
+}
+
+#login_div .button {
+  margin-bottom: 10px;
+}
+
+#lgoin_div_layer_1 {
+
+}
+
+#login_div_layer_2 {
+
+}
+
+#login_username {
+
+}
+
+#login_password {
+
+}
+
+#submit_login {
+  margin-bottom: 10px;
+}
+
+#submit_register {
+
+}
+
+#close_login_1 {
+
+}
+
+#close_login_2 {
+
+}
+
+#open_userprofile {
+
+}
+
+#submit_logout {
+
+}
+/* login end */
+/* general */
+#main_content {
+  float: left;
+  margin-top: 75px;
+  height: auto;
+  min-height: 100%;
+}
+/* general end */
+/* ids end */
+
+/* mobile */
+@media screen and (max-width: 768px){
+  /* classes */
+  .navpos {
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .navigation_ul {
+    justify-content: space-around;
+    padding: 0;
+  }
+  /* classes end */
+
+  /* ids */
+  /* navigation */
+  #navinfo_1 h1 {
+    display: none;
+  }
+
+  #navinfo_2 {
+    position: fixed;
+    background-color: #dfdfdf;
+    margin: 0;
+    top: -100vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 100%;
+    height: auto;
+  }
+
+  #nav_open {
+    position: absolute;
+    display: block;
+    left: 90%;
+    margin-left: -70px;
+  }
+
+  #nav_close {
+    display: block;
+  }
+  /* navigation end */
+
+  /* login */
+  #login_div {
+    left: 0;
+    margin-left: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #login_div * {
+    margin-left: 5%;
+  }
+
+  #login_div form {
+    width: 90%;
+    margin-left: -5%;
+  }
+  /* login end */
+  /* ids end */
+}
+/* mobile end */

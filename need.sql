@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS st0bsel_cms;
+
+CREATE TABLE IF NOT EXISTS users (
+  UserID INT NOT NULL AUTO_INCREMENT,
+  Username VARCHAR(50),
+  Userpassword VARCHAR(255),
+  Usermail VARCHAR(50),
+  registerton DATE,
+  UserLVL INT,
+  PRIMARY KEY (UserID)
+)DEFAULT CHARSET=utf8;
